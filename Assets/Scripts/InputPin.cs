@@ -3,12 +3,7 @@ using UnityEngine;
 
 namespace TILab
 {
-    public class InputPin : Pin, IColliderEventPressExitHandler
+    public class InputPin : Pin
     {
-        public void OnColliderEventPressExit(ColliderButtonEventData eventData)
-        {
-            Value = !Value;
-            OnCircuitUpdate();
-        }
     }
 }
