@@ -22,7 +22,6 @@ namespace TILab
         void Update()
         {
             this.OnCircuitUpdate();
-            Debug.Log(Inputs.Length);
         }
 
         public virtual void OnCircuitUpdate()
