@@ -12,13 +12,12 @@ namespace TILab
         
         public OutputPin[] Outputs { get; set; }
 
-        private void Awake()
+        protected virtual void Awake()
         {
             Inputs = GetComponentsInChildren<InputPin>();
             Outputs = GetComponentsInChildren<OutputPin>();
         }
 
-        // Update is called once per frame
         void Update()
         {
             this.OnCircuitUpdate();
