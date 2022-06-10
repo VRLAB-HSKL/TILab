@@ -1,5 +1,6 @@
-using System;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 namespace TILab
 {
@@ -19,6 +20,12 @@ namespace TILab
             
             
             this.OnCircuitUpdate();
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, transform.position + transform.up);
         }
 
         public virtual void OnCircuitUpdate()
