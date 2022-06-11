@@ -6,6 +6,7 @@ namespace TILab
     public class Clock : MonoBehaviour
     {
         public GameObject Finger;
+        public GameObject CenterPoint;
         public float Speed = 1;
         
         private OutputPin OutputPin;
@@ -18,7 +19,7 @@ namespace TILab
         
         private void FixedUpdate()
         {
-            Finger.transform.Rotate(0, Speed, 0);
+            Finger.transform.RotateAround(CenterPoint.transform.position, CenterPoint.transform.up, Speed);
 
             _counter += Speed;
             if (_counter >= 360)
