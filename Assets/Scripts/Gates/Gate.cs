@@ -16,6 +16,8 @@ namespace TILab
         {
             Inputs = GetComponentsInChildren<InputPin>();
             Outputs = GetComponentsInChildren<OutputPin>();
+            
+            this.OnCircuitUpdate();
         }
 
         void Update()
