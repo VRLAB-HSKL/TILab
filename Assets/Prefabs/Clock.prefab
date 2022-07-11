@@ -307,6 +307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
+  <CanCreateCables>k__BackingField: 1
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
 --- !u!1 &8172087004612738068
 GameObject:
   m_ObjectHideFlags: 0

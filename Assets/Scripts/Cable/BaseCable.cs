@@ -9,7 +9,7 @@ namespace TILab
         public Vector3 BeginPos { get; set; }
         public Vector3 EndPos { get; set; }
 
-        private LineRenderer _lineRenderer;
+        protected LineRenderer _lineRenderer;
         protected List<Vector3> _bezierPoints = new List<Vector3>();
         
         public int vertexCount = 12;
@@ -40,9 +40,11 @@ namespace TILab
             _bezierPoints.Add(EndPos);
         }
 
+        // protected List<Vector3> pointList = new List<Vector3>();
         protected virtual void DrawBezier()
         {
             var pointList = new List<Vector3>();
+            // pointList.Clear();
             for (int i = 2; i < _bezierPoints.Count; i+=2)
             {
                 for (float ratio = 0; ratio <= 1; ratio += 1.0f / vertexCount)
@@ -63,7 +65,7 @@ namespace TILab
             Gizmos.color = Color.green;
             for (int i = 1; i < _bezierPoints.Count; i++)
             {
-                Gizmos.DrawLine(_bezierPoints[i-1], _bezierPoints[i]);
+                Gizmos.DrawLine(transform.TransformPoint(_bezierPoints[i-1]), transform.TransformPoint(_bezierPoints[i]));
             }
             
             Gizmos.color = Color.red;
@@ -71,12 +73,12 @@ namespace TILab
             {
                 for (float ratio = 0.5f / vertexCount; ratio<1; ratio += 1.0f / vertexCount)
                 {
-                    Gizmos.DrawLine(Vector3.Lerp(_bezierPoints[i-2], _bezierPoints[i-1], ratio), Vector3.Lerp(_bezierPoints[i-1], _bezierPoints[i], ratio));
+                    Gizmos.DrawLine(Vector3.Lerp(transform.TransformPoint(_bezierPoints[i-2]), transform.TransformPoint(_bezierPoints[i-1]), ratio), Vector3.Lerp(transform.TransformPoint(_bezierPoints[i-1]), transform.TransformPoint(_bezierPoints[i]), ratio));
                 }
             }
             
             Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(_bezierPoints[0], _bezierPoints[^1]);
+            Gizmos.DrawLine(transform.TransformPoint(_bezierPoints[0]), transform.TransformPoint(_bezierPoints[^1]));
         }
     }
 }

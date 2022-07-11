@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
 --- !u!1 &5351036915913641947
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
 --- !u!1 &5359219643903947875
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
 --- !u!1 &5435630663299581211
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
 --- !u!1 &5570784047120094088
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,3 +748,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 0
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}

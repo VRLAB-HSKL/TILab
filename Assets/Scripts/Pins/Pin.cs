@@ -16,6 +16,7 @@ namespace TILab
         public bool CanCreateCables { get; set; } = true;
         
         public Gate Gate { get; private set; }
+        public GameObject cablePrefab;
         
         private Renderer _renderer;
 
@@ -84,18 +85,16 @@ namespace TILab
             foreach (var collidedGameObject in collidedGameObjects)
             {
                 var pin = collidedGameObject.GetComponent<Pin>();
+                Destroy(_cableObject);
+                _cable = null;
+                _cableObject = null;
                 if (pin != null)
                 {
-                    Destroy(_cableObject);
-                    _cable = null;
-                    _cableObject = null;
                     if (GetType() == typeof(InputPin) && pin.GetType() == typeof(OutputPin) ||
                         GetType() == typeof(OutputPin) && pin.GetType() == typeof(InputPin))
                     {
-                        var test = new GameObject();
-                        LineRenderer lineRenderer = test.AddComponent<LineRenderer>();
-                        lineRenderer.startWidth = 0.1f;
-                        var connectedCable = test.AddComponent<ConnectedCable>();
+                        var prefab = Instantiate(cablePrefab);
+                        var connectedCable = prefab.GetComponent<ConnectedCable>();
                         if (GetType() == typeof(InputPin))
                         {
                             connectedCable.InputPin = (InputPin) this;

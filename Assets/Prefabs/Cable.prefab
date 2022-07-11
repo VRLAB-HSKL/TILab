@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2319709167795542708}
   - component: {fileID: 750410013787021021}
   - component: {fileID: 8116983518723694984}
+  - component: {fileID: 7557381966908247249}
   m_Layer: 0
   m_Name: Cable
   m_TagString: Untagged
@@ -147,3 +148,17 @@ MonoBehaviour:
   vertexCount: 24
   <InputPin>k__BackingField: {fileID: 0}
   <OutputPin>k__BackingField: {fileID: 0}
+--- !u!64 &7557381966908247249
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812301095513663268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
