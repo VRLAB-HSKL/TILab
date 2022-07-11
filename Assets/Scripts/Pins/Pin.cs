@@ -12,6 +12,8 @@ namespace TILab
     {
         [field: SerializeField] 
         public bool Value { get; set; }
+        [field: SerializeField] 
+        public bool CanCreateCables { get; set; } = true;
         
         public Gate Gate { get; private set; }
         
@@ -43,6 +45,7 @@ namespace TILab
 
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
+            if (!CanCreateCables) return;
             Debug.Log("OnColliderEventDragStart");
             if (eventData.button != ColliderButtonEventData.InputButton.Trigger) return;
             
@@ -58,6 +61,7 @@ namespace TILab
 
         public void OnColliderEventDragUpdate(ColliderButtonEventData eventData)
         {
+            if (!CanCreateCables) return;
             Debug.Log("OnColliderEventDragUpdate");
             if (!_isCreatingCable) return;
             _cable.EndPos = eventData.eventCaster.transform.position;
@@ -66,6 +70,7 @@ namespace TILab
 
         public void OnColliderEventDragEnd(ColliderButtonEventData eventData)
         {
+            if (!CanCreateCables) return;
             Debug.Log("OnColliderEventDragEnd");
             if (!_isCreatingCable) return;
             _isCreatingCable = false;
