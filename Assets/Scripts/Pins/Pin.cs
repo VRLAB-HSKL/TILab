@@ -17,6 +17,7 @@ namespace TILab
         
         public Gate Gate { get; private set; }
         public GameObject cablePrefab;
+        public GameObject baseCablePrefab;
         
         private Renderer _renderer;
 
@@ -49,11 +50,9 @@ namespace TILab
             if (!CanCreateCables) return;
             Debug.Log("OnColliderEventDragStart");
             if (eventData.button != Config.CableDragButton) return;
-            
-            _cableObject = new GameObject();
-            LineRenderer lineRenderer = _cableObject.AddComponent<LineRenderer>();
-            lineRenderer.startWidth = Config.CableWidth;
-            _cable = _cableObject.AddComponent<BaseCable>();
+
+            _cableObject = Instantiate(baseCablePrefab);
+            _cable = _cableObject.GetComponent<BaseCable>();
             _cable.BeginPos = transform.position;
             _cable.EndPos = _cable.BeginPos;
 

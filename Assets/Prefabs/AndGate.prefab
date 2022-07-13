@@ -114,6 +114,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 812301095513663268, guid: 3b5ed6b1965c7422b8f8e67f43552178, type: 3}
 --- !u!1 &5916875221389315030
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,8 +143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5916875221389315030}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.3, y: 0, z: -0.5}
-  m_LocalScale: {x: 0.32999998, y: 0.14999999, z: 0.32999995}
+  m_LocalPosition: {x: -0.30000007, y: 0.00000011920929, z: -0.50000024}
+  m_LocalScale: {x: 0.32999998, y: 0.15, z: 0.32999992}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5916875221410701544}
@@ -228,6 +229,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 812301095513663268, guid: 3b5ed6b1965c7422b8f8e67f43552178, type: 3}
 --- !u!1 &5916875221397436495
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +344,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 812301095513663268, guid: 3b5ed6b1965c7422b8f8e67f43552178, type: 3}
 --- !u!1 &5916875221410701459
 GameObject:
   m_ObjectHideFlags: 0
