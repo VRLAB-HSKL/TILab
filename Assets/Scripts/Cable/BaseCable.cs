@@ -40,11 +40,9 @@ namespace TILab
             _bezierPoints.Add(EndPos);
         }
 
-        // protected List<Vector3> pointList = new List<Vector3>();
         protected virtual void DrawBezier()
         {
             var pointList = new List<Vector3>();
-            // pointList.Clear();
             for (int i = 2; i < _bezierPoints.Count; i+=2)
             {
                 for (float ratio = 0; ratio <= 1; ratio += 1.0f / vertexCount)
