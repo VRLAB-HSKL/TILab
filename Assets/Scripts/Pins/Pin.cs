@@ -48,7 +48,6 @@ namespace TILab
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragStart");
             if (eventData.button != Config.CableDragButton) return;
 
             _cableObject = Instantiate(baseCablePrefab);
@@ -62,7 +61,6 @@ namespace TILab
         public void OnColliderEventDragUpdate(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragUpdate");
             if (!_isCreatingCable) return;
             _cable.EndPos = eventData.eventCaster.transform.position;
         }
@@ -70,7 +68,6 @@ namespace TILab
         public void OnColliderEventDragEnd(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragEnd");
             if (!_isCreatingCable) return;
             _isCreatingCable = false;
             
@@ -86,7 +83,7 @@ namespace TILab
                 Destroy(_cableObject);
                 _cable = null;
                 _cableObject = null;
-                if (pin != null)
+                if (pin != null && pin.CanCreateCables)
                 {
                     if (GetType() == typeof(InputPin) && pin.GetType() == typeof(OutputPin) ||
                         GetType() == typeof(OutputPin) && pin.GetType() == typeof(InputPin))
@@ -103,8 +100,9 @@ namespace TILab
                             connectedCable.InputPin = (InputPin) pin;
                             connectedCable.OutputPin = (OutputPin) this;
                         }
+                        
+                        return;
                     }
-                    
                 }
             }
         }
