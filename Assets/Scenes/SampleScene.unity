@@ -382,6 +382,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8116983518723694984, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+      propertyPath: deletable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116983518723694984, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
       propertyPath: canBeDeleted
       value: 0
       objectReference: {fileID: 0}
