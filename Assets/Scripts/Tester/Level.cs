@@ -8,11 +8,10 @@ namespace TILab.Tester
     {
         public SequenceItem[] Sequence =
         {
-            new SequenceItem("1101", "1111"),
-            new SequenceItem("1001", "0100"),
-            new SequenceItem("0001", "0100"),
-            new SequenceItem("1111", "1111"),
-            new SequenceItem("0011", "0100")
+            new SequenceItem("00", "0"),
+            new SequenceItem("01", "0"),
+            new SequenceItem("10", "0"),
+            new SequenceItem("11", "1"),
         };
 
         private int _sequencePos = 0;
