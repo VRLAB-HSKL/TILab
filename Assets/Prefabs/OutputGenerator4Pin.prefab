@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 3660742133386801907}
   - component: {fileID: 7185389783948560529}
   m_Layer: 0
-  m_Name: OutputGenerator
+  m_Name: OutputGenerator4Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

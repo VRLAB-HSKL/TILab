@@ -20,12 +20,12 @@ namespace TILab.Tester
         private bool _runSequence = false;
         private bool _sequenceResults = true;
         
-        private TesterInput _input;
+        private InputValidator _inputValidator;
         private OutputGenerator _outputGenerator;
         
         private void Start()
         {
-            _input = GetComponentInChildren<TesterInput>();
+            _inputValidator = GetComponentInChildren<InputValidator>();
             _outputGenerator = GetComponentInChildren<OutputGenerator>();
         }
 
@@ -53,7 +53,7 @@ namespace TILab.Tester
                     {
                         _runSequence = false;
                         _outputGenerator.ResetOutputs();
-                        _input.SetStatus(_sequenceResults);
+                        _inputValidator.SetStatus(_sequenceResults);
                         return;
                     }
                 }
@@ -65,7 +65,7 @@ namespace TILab.Tester
                 if (_sequenceTicks == Sequence[_sequencePos].WaitTicks)
                 {
                     Debug.Log($"current val: {_sequenceResults}");
-                    _sequenceResults = _sequenceResults & _input.Test(Sequence[_sequencePos].Input);
+                    _sequenceResults = _sequenceResults & _inputValidator.Test(Sequence[_sequencePos].Input);
                     Debug.Log($"new val: {_sequenceResults}");
                 }
 
