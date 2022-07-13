@@ -48,11 +48,11 @@ namespace TILab
         {
             if (!CanCreateCables) return;
             Debug.Log("OnColliderEventDragStart");
-            if (eventData.button != ColliderButtonEventData.InputButton.Trigger) return;
+            if (eventData.button != Config.CableDragButton) return;
             
             _cableObject = new GameObject();
             LineRenderer lineRenderer = _cableObject.AddComponent<LineRenderer>();
-            lineRenderer.startWidth = 0.1f;
+            lineRenderer.startWidth = Config.CableWidth;
             _cable = _cableObject.AddComponent<BaseCable>();
             _cable.BeginPos = transform.position;
             _cable.EndPos = _cable.BeginPos;
@@ -66,7 +66,6 @@ namespace TILab
             Debug.Log("OnColliderEventDragUpdate");
             if (!_isCreatingCable) return;
             _cable.EndPos = eventData.eventCaster.transform.position;
-            // Debug.Log(eventData.);
         }
 
         public void OnColliderEventDragEnd(ColliderButtonEventData eventData)
