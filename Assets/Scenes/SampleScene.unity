@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ViveRig
       objectReference: {fileID: 0}
+    - target: {fileID: 168160, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -312,6 +316,14 @@ PrefabInstance:
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411378, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
+      propertyPath: customModelActiveMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490446, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}

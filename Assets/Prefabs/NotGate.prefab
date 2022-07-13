@@ -363,7 +363,7 @@ MonoBehaviour:
   m_overrideMaxAngularVelocity: 1
   m_unblockableGrab: 1
   m_primaryGrabButton: 0
-  m_secondaryGrabButton: 1
+  m_secondaryGrabButton: 4
   m_grabButton: 0
   m_allowMultipleGrabbers: 1
   m_grabOnLastEntered: 1
