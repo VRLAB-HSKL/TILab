@@ -26,6 +26,12 @@ namespace TILab.Tester
         {
             _inputValidator = GetComponentInChildren<InputValidator>();
             _outputGenerator = GetComponentInChildren<OutputGenerator>();
+            
+            if (_inputValidator == null || _outputGenerator == null)
+            {
+                throw new ArgumentException(
+                    "Level requires InputValidator and OutputGenerator as children in object tree");
+            }
         }
 
         public void RunSequence()
