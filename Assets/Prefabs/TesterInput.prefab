@@ -126,10 +126,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9148034061202232189}
-  - {fileID: 5374142915481043073}
-  - {fileID: 7124858377500263962}
   - {fileID: 2697942672450835864}
+  - {fileID: 7124858377500263962}
+  - {fileID: 5374142915481043073}
+  - {fileID: 9148034061202232189}
   m_Father: {fileID: 3660742133386801907}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7736702729077126263}
   - component: {fileID: 556919442881843855}
   m_Layer: 0
-  m_Name: B
+  m_Name: C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,7 +166,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7425150769882703951}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &8950977556520239722
 MeshFilter:
@@ -247,6 +247,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 0}
 --- !u!1 &5351036915913641947
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +262,7 @@ GameObject:
   - component: {fileID: 4672060141228990502}
   - component: {fileID: 3515261996281352403}
   m_Layer: 0
-  m_Name: D
+  m_Name: A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -280,7 +281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7425150769882703951}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &2939847403570006902
 MeshFilter:
@@ -361,6 +362,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 0}
 --- !u!1 &5359219643903947875
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +377,7 @@ GameObject:
   - component: {fileID: 2037286437133668612}
   - component: {fileID: 6567637499946571451}
   m_Layer: 0
-  m_Name: C
+  m_Name: B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7425150769882703951}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &5592298397494277055
 MeshFilter:
@@ -475,6 +477,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 0}
 --- !u!1 &5435630663299581211
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +492,7 @@ GameObject:
   - component: {fileID: 5382546915719143187}
   - component: {fileID: 688652923587134109}
   m_Layer: 0
-  m_Name: A
+  m_Name: D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +511,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7425150769882703951}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &1267181920195082634
 MeshFilter:
@@ -589,6 +592,7 @@ MonoBehaviour:
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
   cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 0}
 --- !u!1 &5570784047120094088
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2319709167795542708}
   - component: {fileID: 750410013787021021}
-  - component: {fileID: 8116983518723694984}
   - component: {fileID: 7557381966908247249}
+  - component: {fileID: 3055890828309176218}
   m_Layer: 0
-  m_Name: Cable
+  m_Name: BaseCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,21 +133,6 @@ LineRenderer:
     generateLightingData: 1
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &8116983518723694984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812301095513663268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 234281d1268e4614be7d850693e4d433, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vertexCount: 24
-  <InputPin>k__BackingField: {fileID: 0}
-  <OutputPin>k__BackingField: {fileID: 0}
 --- !u!64 &7557381966908247249
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -162,3 +147,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &3055890828309176218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812301095513663268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58cabcab834fd1b012e03c8ffd49ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vertexCount: 12
