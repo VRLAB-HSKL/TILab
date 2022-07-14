@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
 
 namespace TILab
