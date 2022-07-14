@@ -4,23 +4,24 @@ using UnityEngine;
 
 namespace TILab
 {
-    public class Clonable : MonoBehaviour, IColliderEventDragStartHandler
+    public class ItemSpawner : MonoBehaviour, IColliderEventDragStartHandler
     {
         public GameObject spawnableItem;
+        public Vector3 positionalOffset;
         
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
             Debug.Log(eventData);
-            if (eventData.button == ColliderButtonEventData.InputButton.GripOrHandTrigger)
+            if (eventData.button == ColliderButtonEventData.InputButton.Trigger)
             {
                 var collidedGameObjects = 
-                    Physics.OverlapSphere(eventData.eventCaster.transform.position, 0.1f)
+                    Physics.OverlapSphere(this.transform.position+ new Vector3(0,1,0), 0.1f)
                         .Except(new [] {GetComponent<Collider>()})
                         .Select(c=>c.gameObject)
                         .ToArray();
 
-                if(collidedGameObjects.Length < 5)
-                    Instantiate(spawnableItem, this.transform.position, Quaternion.identity);
+                if(collidedGameObjects.Length < 1)
+                    Instantiate(spawnableItem, positionalOffset, Quaternion.identity);
                 
             }
         }
