@@ -4,7 +4,7 @@ namespace TILab
 {
     public class Config
     {
-        public const float CableWidth = 0.1f;
+        public const float IgnoreTickChangeChance = 0.01f;
         
         public const ColliderButtonEventData.InputButton CableDragButton = ColliderButtonEventData.InputButton.Trigger;
         

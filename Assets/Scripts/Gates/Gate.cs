@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace TILab
 {
@@ -26,7 +27,7 @@ namespace TILab
         public virtual void OnCircuitUpdate()
         {
             if (Outputs == null) return;
-
+            
             foreach (OutputPin output in Outputs)
             {
                 output.OnCircuitUpdate();
