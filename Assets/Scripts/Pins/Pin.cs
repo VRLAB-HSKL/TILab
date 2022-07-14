@@ -77,12 +77,13 @@ namespace TILab
                     .Select(c=>c.gameObject)
                     .ToArray();
             
+            Destroy(_cableObject);
+            _cable = null;
+            _cableObject = null;
+            
             foreach (var collidedGameObject in collidedGameObjects)
             {
                 var pin = collidedGameObject.GetComponent<Pin>();
-                Destroy(_cableObject);
-                _cable = null;
-                _cableObject = null;
                 if (pin != null && pin.CanCreateCables)
                 {
                     if (GetType() == typeof(InputPin) && pin.GetType() == typeof(OutputPin) ||
