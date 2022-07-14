@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TILab
 {
@@ -12,6 +13,8 @@ namespace TILab
         
         [field: SerializeField] 
         public OutputPin OutputPin { get; set; }
+
+        public bool deletable = true;
 
         private bool _value = false;
         private Renderer _renderer;
@@ -94,8 +97,10 @@ namespace TILab
         
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
-            Debug.Log("DESTORY THIS");
-            Destroy(gameObject);
+            if (deletable && eventData.button == Config.CableRemoveButton)
+            {
+                Destroy(gameObject);   
+            }
         }
     }
 }
