@@ -1,4 +1,5 @@
-﻿using HTC.UnityPlugin.ColliderEvent;
+﻿using System.Linq;
+using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
 
 namespace TILab
@@ -12,7 +13,15 @@ namespace TILab
             Debug.Log(eventData);
             if (eventData.button == ColliderButtonEventData.InputButton.GripOrHandTrigger)
             {
-                Instantiate(spawnableItem, this.transform.position, Quaternion.identity);
+                var collidedGameObjects = 
+                    Physics.OverlapSphere(eventData.eventCaster.transform.position, 0.1f)
+                        .Except(new [] {GetComponent<Collider>()})
+                        .Select(c=>c.gameObject)
+                        .ToArray();
+
+                if(collidedGameObjects.Length < 5)
+                    Instantiate(spawnableItem, this.transform.position, Quaternion.identity);
+                
             }
         }
     }
