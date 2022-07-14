@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using HTC.UnityPlugin.ColliderEvent;
@@ -24,6 +26,8 @@ namespace TILab
         private bool _isCreatingCable = false;
         private BaseCable _cable;
         private GameObject _cableObject;
+
+        private List<ConnectedCable> _cables = new List<ConnectedCable>();
 
         private void Start()
         {
@@ -102,9 +106,30 @@ namespace TILab
                             connectedCable.OutputPin = (OutputPin) this;
                         }
                         
+                        Connect(connectedCable);
+                        pin.Connect(connectedCable);
+                        
                         return;
                     }
                 }
+            }
+        }
+
+        public void Connect(ConnectedCable cable)
+        {
+            _cables.Add(cable);
+        }
+
+        public void Disconnect(ConnectedCable cable)
+        {
+            _cables.Remove(cable);
+        }
+
+        public void OnDestroy()
+        {
+            foreach (var cable in _cables)
+            {
+                Destroy(cable.gameObject);
             }
         }
     }
