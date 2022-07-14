@@ -16,7 +16,7 @@ namespace TILab
             if (eventData.button == ColliderButtonEventData.InputButton.Trigger)
             {
                 var collidedGameObjects = 
-                    Physics.OverlapSphere(this.transform.position+ new Vector3(0,1,0), 0.1f)
+                    Physics.OverlapSphere(this.landingPad.transform.position+ positionalOffset, 0.1f)
                         .Except(new [] {GetComponent<Collider>()})
                         .Select(c=>c.gameObject)
                         .ToArray();
