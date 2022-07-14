@@ -39,11 +39,7 @@ namespace TILab
 
         protected override void UpdateBezier()
         {
-            if (InputPin == null || OutputPin == null)
-            {
-                Debug.Log("LOLOLOLOL");
-                return;
-            }
+            if (InputPin == null || OutputPin == null) return;
             _bezierPoints = new List<Vector3>();
             
             _bezierPoints.Add(transform.InverseTransformPoint(InputPin.transform.position));
