@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -38,7 +39,11 @@ namespace TILab
 
         protected override void UpdateBezier()
         {
-            if (InputPin == null || OutputPin == null) return;
+            if (InputPin == null || OutputPin == null)
+            {
+                Debug.Log("LOLOLOLOL");
+                return;
+            }
             _bezierPoints = new List<Vector3>();
             
             _bezierPoints.Add(transform.InverseTransformPoint(InputPin.transform.position));
@@ -92,6 +97,12 @@ namespace TILab
 
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(transform.TransformPoint(_bezierPoints[_bezierPoints.Count / 2]), 0.05f);
+        }
+
+        public void OnDestroy()
+        {
+            InputPin.Disconnect(this);
+            OutputPin.Disconnect(this);
         }
     }
 }
