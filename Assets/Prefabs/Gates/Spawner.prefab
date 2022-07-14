@@ -401,8 +401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c2a92ebf9849a78b9be08d28b672ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  landingPad: {fileID: 2160676590343768102}
   spawnableItem: {fileID: 5916875221410701459, guid: 6e74ce400951d9180bdf896a2d39f615, type: 3}
-  positionalOffset: {x: -0.45, y: 1.05, z: 0.05}
+  positionalOffset: {x: 0, y: 0.75, z: 0}
 --- !u!4 &5611053017069384353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427878, guid: d47aad82a5847fc408a6f211d6393d72, type: 3}

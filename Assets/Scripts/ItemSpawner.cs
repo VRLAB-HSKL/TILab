@@ -6,6 +6,7 @@ namespace TILab
 {
     public class ItemSpawner : MonoBehaviour, IColliderEventDragStartHandler
     {
+        public GameObject landingPad;
         public GameObject spawnableItem;
         public Vector3 positionalOffset;
         
@@ -21,7 +22,7 @@ namespace TILab
                         .ToArray();
 
                 if(collidedGameObjects.Length < 1)
-                    Instantiate(spawnableItem, positionalOffset, Quaternion.identity);
+                    Instantiate(spawnableItem, landingPad.transform.position+ positionalOffset, Quaternion.identity);
                 
             }
         }
