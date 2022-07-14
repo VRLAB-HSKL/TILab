@@ -52,6 +52,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5916875221410701544}
     m_Modifications:
+    - target: {fileID: 625425721656044560, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
+      propertyPath: toDelete
+      value: 
+      objectReference: {fileID: 5916875221410701459}
     - target: {fileID: 5916875221410701459, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
       propertyPath: m_Name
       value: 2Input1OutputGate
