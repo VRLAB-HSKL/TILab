@@ -5,7 +5,7 @@ namespace TILab
 {
     public class Deletable : MonoBehaviour, IColliderEventDragStartHandler
     {
-        public bool deletable = false;
+        public bool deletable = true;
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
             if (deletable && eventData.button == Config.RemoveButton)
