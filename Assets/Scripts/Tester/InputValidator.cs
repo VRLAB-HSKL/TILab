@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TILab.Tester
 {
-    public class TesterInput : MonoBehaviour
+    public class InputValidator : MonoBehaviour
     {
         [SerializeField]
         public GameObject StatusLight;

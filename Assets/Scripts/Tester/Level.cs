@@ -8,11 +8,10 @@ namespace TILab.Tester
     {
         public SequenceItem[] Sequence =
         {
-            new SequenceItem("1101", "1111"),
-            new SequenceItem("1001", "0100"),
-            new SequenceItem("0001", "0100"),
-            new SequenceItem("1111", "1111"),
-            new SequenceItem("0011", "0100")
+            new SequenceItem("00", "0"),
+            new SequenceItem("01", "0"),
+            new SequenceItem("10", "0"),
+            new SequenceItem("11", "1"),
         };
 
         private int _sequencePos = 0;
@@ -20,13 +19,19 @@ namespace TILab.Tester
         private bool _runSequence = false;
         private bool _sequenceResults = true;
         
-        private TesterInput _input;
+        private InputValidator _inputValidator;
         private OutputGenerator _outputGenerator;
         
         private void Start()
         {
-            _input = GetComponentInChildren<TesterInput>();
+            _inputValidator = GetComponentInChildren<InputValidator>();
             _outputGenerator = GetComponentInChildren<OutputGenerator>();
+            
+            if (_inputValidator == null || _outputGenerator == null)
+            {
+                throw new ArgumentException(
+                    "Level requires InputValidator and OutputGenerator as children in object tree");
+            }
         }
 
         public void RunSequence()
@@ -53,7 +58,7 @@ namespace TILab.Tester
                     {
                         _runSequence = false;
                         _outputGenerator.ResetOutputs();
-                        _input.SetStatus(_sequenceResults);
+                        _inputValidator.SetStatus(_sequenceResults);
                         return;
                     }
                 }
@@ -65,7 +70,7 @@ namespace TILab.Tester
                 if (_sequenceTicks == Sequence[_sequencePos].WaitTicks)
                 {
                     Debug.Log($"current val: {_sequenceResults}");
-                    _sequenceResults = _sequenceResults & _input.Test(Sequence[_sequencePos].Input);
+                    _sequenceResults = _sequenceResults & _inputValidator.Test(Sequence[_sequencePos].Input);
                     Debug.Log($"new val: {_sequenceResults}");
                 }
 

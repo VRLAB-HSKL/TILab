@@ -1,17 +1,20 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TILab
 {
-    public class ConnectedCable : BaseCable, CircuitItem, IColliderEventDragStartHandler
+    public class ConnectedCable : BaseCable, CircuitItem
     {
         [field: SerializeField] 
         public InputPin InputPin { get; set; }
         
         [field: SerializeField] 
         public OutputPin OutputPin { get; set; }
+
+        public bool deletable = true;
 
         private bool _value = false;
         private Renderer _renderer;
@@ -91,11 +94,11 @@ namespace TILab
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(transform.TransformPoint(_bezierPoints[_bezierPoints.Count / 2]), 0.05f);
         }
-        
-        public void OnColliderEventDragStart(ColliderButtonEventData eventData)
+
+        public void OnDestroy()
         {
-            Debug.Log("DESTORY THIS");
-            Destroy(gameObject);
+            InputPin.Disconnect(this);
+            OutputPin.Disconnect(this);
         }
     }
 }

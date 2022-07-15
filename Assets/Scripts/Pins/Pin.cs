@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using HTC.UnityPlugin.ColliderEvent;
@@ -17,12 +19,15 @@ namespace TILab
         
         public Gate Gate { get; private set; }
         public GameObject cablePrefab;
+        public GameObject baseCablePrefab;
         
         private Renderer _renderer;
 
         private bool _isCreatingCable = false;
         private BaseCable _cable;
         private GameObject _cableObject;
+
+        private List<ConnectedCable> _cables = new List<ConnectedCable>();
 
         private void Start()
         {
@@ -47,13 +52,10 @@ namespace TILab
         public void OnColliderEventDragStart(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragStart");
-            if (eventData.button != ColliderButtonEventData.InputButton.Trigger) return;
-            
-            _cableObject = new GameObject();
-            LineRenderer lineRenderer = _cableObject.AddComponent<LineRenderer>();
-            lineRenderer.startWidth = 0.1f;
-            _cable = _cableObject.AddComponent<BaseCable>();
+            if (eventData.button != Config.CableDragButton) return;
+
+            _cableObject = Instantiate(baseCablePrefab);
+            _cable = _cableObject.GetComponent<BaseCable>();
             _cable.BeginPos = transform.position;
             _cable.EndPos = _cable.BeginPos;
 
@@ -63,16 +65,13 @@ namespace TILab
         public void OnColliderEventDragUpdate(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragUpdate");
             if (!_isCreatingCable) return;
             _cable.EndPos = eventData.eventCaster.transform.position;
-            // Debug.Log(eventData.);
         }
 
         public void OnColliderEventDragEnd(ColliderButtonEventData eventData)
         {
             if (!CanCreateCables) return;
-            Debug.Log("OnColliderEventDragEnd");
             if (!_isCreatingCable) return;
             _isCreatingCable = false;
             
@@ -82,13 +81,14 @@ namespace TILab
                     .Select(c=>c.gameObject)
                     .ToArray();
             
+            Destroy(_cableObject);
+            _cable = null;
+            _cableObject = null;
+            
             foreach (var collidedGameObject in collidedGameObjects)
             {
                 var pin = collidedGameObject.GetComponent<Pin>();
-                Destroy(_cableObject);
-                _cable = null;
-                _cableObject = null;
-                if (pin != null)
+                if (pin != null && pin.CanCreateCables)
                 {
                     if (GetType() == typeof(InputPin) && pin.GetType() == typeof(OutputPin) ||
                         GetType() == typeof(OutputPin) && pin.GetType() == typeof(InputPin))
@@ -105,9 +105,31 @@ namespace TILab
                             connectedCable.InputPin = (InputPin) pin;
                             connectedCable.OutputPin = (OutputPin) this;
                         }
+                        
+                        Connect(connectedCable);
+                        pin.Connect(connectedCable);
+                        
+                        return;
                     }
-                    
                 }
+            }
+        }
+
+        public void Connect(ConnectedCable cable)
+        {
+            _cables.Add(cable);
+        }
+
+        public void Disconnect(ConnectedCable cable)
+        {
+            _cables.Remove(cable);
+        }
+
+        public void OnDestroy()
+        {
+            foreach (var cable in _cables)
+            {
+                Destroy(cable.gameObject);
             }
         }
     }
