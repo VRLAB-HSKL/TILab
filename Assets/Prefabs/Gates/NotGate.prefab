@@ -113,6 +113,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8095122233004266571}
     m_Modifications:
+    - target: {fileID: 988606420967941996, guid: 86b2ed13ede0e03d8a9f70dd6e618bb3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677940845382420136, guid: 86b2ed13ede0e03d8a9f70dd6e618bb3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67f0173636773f64c8bae01af31ab5da, type: 2}
+    - target: {fileID: 4302874072491764918, guid: 86b2ed13ede0e03d8a9f70dd6e618bb3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67f0173636773f64c8bae01af31ab5da, type: 2}
+    - target: {fileID: 4578765752760899089, guid: 86b2ed13ede0e03d8a9f70dd6e618bb3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4784555351878435718, guid: 86b2ed13ede0e03d8a9f70dd6e618bb3, type: 3}
       propertyPath: toDelete
       value: 
