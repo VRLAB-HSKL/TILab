@@ -76,7 +76,7 @@ namespace TILab
             }
             
             Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(transform.TransformPoint(_bezierPoints[0]), transform.TransformPoint(_bezierPoints[^1]));
+            Gizmos.DrawLine(transform.TransformPoint(_bezierPoints[0]), transform.TransformPoint(_bezierPoints[_bezierPoints.Count-1]));
         }
     }
 }

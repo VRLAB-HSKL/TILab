@@ -10,6 +10,7 @@ namespace TILab
         public GameObject landingPad;
         public GameObject spawnableItem;
         public Vector3 positionalOffset;
+        public Vector3 rotationOffset = new Vector3(0, 90, 90);
 
         public void Awake()
         {
@@ -35,7 +36,8 @@ namespace TILab
 
             if (collidedGameObjects.Length < 1)
             {
-                Instantiate(spawnableItem, landingPad.transform.position+ positionalOffset, Quaternion.identity);
+                var newObject = Instantiate(spawnableItem, landingPad.transform.position+ positionalOffset, Quaternion.identity);
+                newObject.transform.Rotate(landingPad.transform.rotation.eulerAngles + rotationOffset);
             }
 
         }
