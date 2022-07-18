@@ -109,6 +109,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5153872262525976507, guid: eb80004812757a3189638045d2c20b5e, type: 3}
+      propertyPath: <CanCreateCables>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7451763437868985322, guid: eb80004812757a3189638045d2c20b5e, type: 3}
       propertyPath: m_Name
       value: GateInputPin
