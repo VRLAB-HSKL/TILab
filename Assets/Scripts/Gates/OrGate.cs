@@ -2,12 +2,20 @@ using System.Linq;
 
 namespace TILab
 {
-    public class OrGate : SingleOutputGate
+    public class OrGate : Gate
     {
-        protected override bool calculateOutput()
+        public override void OnCircuitUpdate()
         {
-            bool newValue = Inputs.Aggregate(false, (acc, pin) => acc || pin.Value);
-            return newValue;
+            base.OnCircuitUpdate();
+            bool newValue = calculateOutput();
+            foreach (var outputPin in Outputs)
+            {
+                outputPin.Value = newValue;
+            }
+        }
+        virtual protected bool calculateOutput()
+        {
+            return Inputs.Aggregate(false, (acc, pin) => acc || pin.Value);
         }
     }
 }

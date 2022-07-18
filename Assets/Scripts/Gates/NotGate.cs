@@ -15,8 +15,6 @@ namespace TILab
 
         public override void OnCircuitUpdate()
         {
-            base.OnCircuitUpdate();
-            
             for (int i = 0; i < Inputs.Length; i++)
             {
                 Outputs[i].Value = !Inputs[i].Value;
