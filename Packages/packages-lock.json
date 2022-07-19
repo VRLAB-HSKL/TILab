@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.htc.upm.vive-input-utility": {
+      "version": "1.15.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://npm-registry.vive.com"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
