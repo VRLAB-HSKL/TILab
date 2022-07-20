@@ -12,11 +12,13 @@ namespace TILab.Tester
         private Renderer _renderer;
         private bool _value = false;
         private InputPin[] _inputs;
+        private OutputPin _output;
 
         public void Start()
         {
             _renderer = StatusLight.GetComponent<Renderer>();
             _inputs = GetComponentsInChildren<InputPin>();
+            _output = GetComponentInChildren<OutputPin>();
         }
 
         public bool Test(string expected)
@@ -40,6 +42,9 @@ namespace TILab.Tester
 
             var color = _value ? Color.green : Color.red;
             _renderer.material.color = color;
+
+            _output.Value = _value;
+            _output.OnCircuitUpdate();
         }
     }
 }

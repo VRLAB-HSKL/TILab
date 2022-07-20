@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using HTC.UnityPlugin.ColliderEvent;
@@ -24,6 +26,8 @@ namespace TILab
         private bool _isCreatingCable = false;
         private BaseCable _cable;
         private GameObject _cableObject;
+
+        protected List<ConnectedCable> _cables = new List<ConnectedCable>();
 
         private void Start()
         {
@@ -77,12 +81,13 @@ namespace TILab
                     .Select(c=>c.gameObject)
                     .ToArray();
             
+            Destroy(_cableObject);
+            _cable = null;
+            _cableObject = null;
+            
             foreach (var collidedGameObject in collidedGameObjects)
             {
                 var pin = collidedGameObject.GetComponent<Pin>();
-                Destroy(_cableObject);
-                _cable = null;
-                _cableObject = null;
                 if (pin != null && pin.CanCreateCables)
                 {
                     if (GetType() == typeof(InputPin) && pin.GetType() == typeof(OutputPin) ||
@@ -101,9 +106,30 @@ namespace TILab
                             connectedCable.OutputPin = (OutputPin) this;
                         }
                         
+                        Connect(connectedCable);
+                        pin.Connect(connectedCable);
+                        
                         return;
                     }
                 }
+            }
+        }
+
+        public void Connect(ConnectedCable cable)
+        {
+            _cables.Add(cable);
+        }
+
+        public virtual void Disconnect(ConnectedCable cable)
+        {
+            _cables.Remove(cable);
+        }
+
+        public void OnDestroy()
+        {
+            foreach (var cable in _cables)
+            {
+                Destroy(cable.gameObject);
             }
         }
     }

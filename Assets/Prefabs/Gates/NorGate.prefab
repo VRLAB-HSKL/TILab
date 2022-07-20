@@ -52,6 +52,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 788687957857002242}
     m_Modifications:
+    - target: {fileID: 625425721656044560, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
+      propertyPath: toDelete
+      value: 
+      objectReference: {fileID: 788687957857002367}
     - target: {fileID: 5916875221410701459, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
       propertyPath: m_Name
       value: 2Input1OutputGate
@@ -100,6 +104,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062050116491323710, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9eac389a768d50346a17d68be28d836b, type: 2}
+    - target: {fileID: 8177749624195892000, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9eac389a768d50346a17d68be28d836b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 669489351cc109e56a39249a7da3e36e, type: 3}
 --- !u!4 &7574900160893258586 stripped
