@@ -19,8 +19,8 @@ namespace TILab.Tester
         private bool _runSequence = false;
         private bool _sequenceResults = true;
         
-        private InputValidator _inputValidator;
-        private OutputGenerator _outputGenerator;
+        protected InputValidator _inputValidator;
+        protected OutputGenerator _outputGenerator;
         
         private void Start()
         {

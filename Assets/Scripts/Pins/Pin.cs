@@ -27,7 +27,7 @@ namespace TILab
         private BaseCable _cable;
         private GameObject _cableObject;
 
-        private List<ConnectedCable> _cables = new List<ConnectedCable>();
+        protected List<ConnectedCable> _cables = new List<ConnectedCable>();
 
         private void Start()
         {
@@ -120,7 +120,7 @@ namespace TILab
             _cables.Add(cable);
         }
 
-        public void Disconnect(ConnectedCable cable)
+        public virtual void Disconnect(ConnectedCable cable)
         {
             _cables.Remove(cable);
         }

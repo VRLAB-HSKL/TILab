@@ -8,7 +8,8 @@ namespace TILab
         
         public const ColliderButtonEventData.InputButton CableDragButton = ColliderButtonEventData.InputButton.Trigger;
         public const ColliderButtonEventData.InputButton ButtonActivationButton = ColliderButtonEventData.InputButton.Trigger;
-        
+        public const ColliderButtonEventData.InputButton DoorActivationButton = ColliderButtonEventData.InputButton.Trigger;
+
         public const ColliderButtonEventData.InputButton RemoveButton =
             ColliderButtonEventData.InputButton.FunctionKey;
     }
