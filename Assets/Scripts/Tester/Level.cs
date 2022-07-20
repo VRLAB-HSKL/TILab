@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace TILab.Tester
@@ -22,7 +21,7 @@ namespace TILab.Tester
         protected InputValidator _inputValidator;
         protected OutputGenerator _outputGenerator;
         
-        private void Start()
+        public virtual void Start()
         {
             _inputValidator = GetComponentInChildren<InputValidator>();
             _outputGenerator = GetComponentInChildren<OutputGenerator>();

@@ -1,29 +1,17 @@
-using System.Collections;
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace TILab.Tester
 {
     public class DeMorganLevel : Level
     {
-        void Start()
+        public override void Start()
         {
-            Sequence = new SequenceItem[4];
-            Sequence[0] = new SequenceItem("00", "1");
-            Sequence[1] = new SequenceItem("01", "1");
-            Sequence[2] = new SequenceItem("10", "1");
-            Sequence[3] = new SequenceItem("11", "0");
-
-
-            _inputValidator = GetComponentInChildren<InputValidator>();
-            _outputGenerator = GetComponentInChildren<OutputGenerator>();
-
-            if (_inputValidator == null || _outputGenerator == null)
+            base.Start();
+            Sequence = new SequenceItem[]
             {
-                throw new ArgumentException(
-                    "Level requires InputValidator and OutputGenerator as children in object tree");
-            }
+                new SequenceItem("00", "1"),
+                new SequenceItem("01", "1"),
+                new SequenceItem("10", "1"),
+                new SequenceItem("11", "0"),
+            };
         }
     }
 }
