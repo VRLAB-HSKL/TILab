@@ -7,15 +7,19 @@ namespace TILab
         
         public override void OnColliderEventPressEnter(ColliderButtonEventData eventData)
         {
-            OutputPin.Value = true;
+            if (eventData.button != Config.ButtonActivationButton) return;
+            if (!_buttonTopCollided) return;
             
+            OutputPin.Value = true;
             base.OnColliderEventPressEnter(eventData);
         }
         
         public override void OnColliderEventPressExit(ColliderButtonEventData eventData)
         {
-            OutputPin.Value = false;
+            if (eventData.button != Config.ButtonActivationButton) return;
+            if (!_buttonTopCollided) return;
             
+            OutputPin.Value = false;
             base.OnColliderEventPressExit(eventData);
         }
     }
