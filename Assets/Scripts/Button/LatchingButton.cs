@@ -6,8 +6,10 @@ namespace TILab
     {
         public override void OnColliderEventPressEnter(ColliderButtonEventData eventData)
         {
-            OutputPin.Value = !OutputPin.Value;
+            if (eventData.button != Config.ButtonActivationButton) return;
+            if (!_buttonTopCollided) return;
             
+            OutputPin.Value = !OutputPin.Value;
             base.OnColliderEventPressEnter(eventData);
         }
     }
