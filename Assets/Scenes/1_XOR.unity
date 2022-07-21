@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: m_text
       value: NAND
       objectReference: {fileID: 0}
+    - target: {fileID: 5574982533642519007, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
+      propertyPath: spawnableItem
+      value: 
+      objectReference: {fileID: 5916875221410701459, guid: c6b7a8c4fa0b7bab9a70dae92cb942dc, type: 3}
     - target: {fileID: 7129123377972724940, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -260,6 +264,10 @@ PrefabInstance:
       propertyPath: m_text
       value: OR
       objectReference: {fileID: 0}
+    - target: {fileID: 5574982533642519007, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
+      propertyPath: spawnableItem
+      value: 
+      objectReference: {fileID: 788687957857002367, guid: 4c71d94f8d869aeb4b9f0553961e6147, type: 3}
     - target: {fileID: 7129123377972724940, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -386,6 +394,10 @@ PrefabInstance:
       propertyPath: m_text
       value: NOT
       objectReference: {fileID: 0}
+    - target: {fileID: 5574982533642519007, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
+      propertyPath: spawnableItem
+      value: 
+      objectReference: {fileID: 8095122233004266575, guid: e6d3ad7309f928e5d8c969f3ea96a421, type: 3}
     - target: {fileID: 7129123377972724940, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -666,6 +678,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -753,6 +766,10 @@ PrefabInstance:
       propertyPath: m_text
       value: NOR
       objectReference: {fileID: 0}
+    - target: {fileID: 5574982533642519007, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
+      propertyPath: spawnableItem
+      value: 
+      objectReference: {fileID: 788687957857002367, guid: 0b3f05f2dbae97515aebfefaddfc9de5, type: 3}
     - target: {fileID: 7129123377972724940, guid: 0901bbc5ca4045a4082d709cba96918b, type: 3}
       propertyPath: m_RootOrder
       value: 11
