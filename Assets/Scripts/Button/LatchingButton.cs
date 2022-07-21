@@ -4,13 +4,10 @@ namespace TILab
 {
     public class LatchingButton : Button
     {
-        public override void OnColliderEventPressEnter(ColliderButtonEventData eventData)
+        public override void Activate()
         {
-            if (eventData.button != Config.ButtonActivationButton) return;
-            if (!_buttonTopCollided) return;
-            
             OutputPin.Value = !OutputPin.Value;
-            base.OnColliderEventPressEnter(eventData);
+            base.Activate();
         }
     }
 }

@@ -5,22 +5,16 @@ namespace TILab
     public class HoldingButton : Button
     {
         
-        public override void OnColliderEventPressEnter(ColliderButtonEventData eventData)
+        public override void Activate()
         {
-            if (eventData.button != Config.ButtonActivationButton) return;
-            if (!_buttonTopCollided) return;
-            
             OutputPin.Value = true;
-            base.OnColliderEventPressEnter(eventData);
+            base.Activate();
         }
         
-        public override void OnColliderEventPressExit(ColliderButtonEventData eventData)
+        public override void Deactivate()
         {
-            if (eventData.button != Config.ButtonActivationButton) return;
-            if (!_buttonTopCollided) return;
-            
             OutputPin.Value = false;
-            base.OnColliderEventPressExit(eventData);
+            base.Deactivate();
         }
     }
 }

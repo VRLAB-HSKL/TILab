@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ba2f800a1f474d8d969a9837c59058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonTop: {fileID: 8415879206437232921}
+  ButtonTop: {fileID: 3003342463012493292}
   ButtonClickOffset: {x: 0, y: -0.05, z: 0}
 --- !u!1001 &1239079745843278164
 PrefabInstance:
@@ -104,19 +104,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aee9229eb5d87a72b980e5a8a68a4e1, type: 3}
+--- !u!1 &3003342463012493292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4079166664311727800, guid: 8aee9229eb5d87a72b980e5a8a68a4e1, type: 3}
+  m_PrefabInstance: {fileID: 1239079745843278164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6096462702753386460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5019513512122531464, guid: 8aee9229eb5d87a72b980e5a8a68a4e1, type: 3}
   m_PrefabInstance: {fileID: 1239079745843278164}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8415879206437232921 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7347954820123660365, guid: 8aee9229eb5d87a72b980e5a8a68a4e1, type: 3}
-  m_PrefabInstance: {fileID: 1239079745843278164}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28131e1d89e41fcba41793f8f739dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
