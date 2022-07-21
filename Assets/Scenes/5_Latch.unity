@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7379109918480468028, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+      propertyPath: deletable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8116983518723694984, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
       propertyPath: <InputPin>k__BackingField
       value: 
@@ -538,6 +542,10 @@ PrefabInstance:
     - target: {fileID: 2192618921006788764, guid: fb430d56bd6a07cb491baa97a64a5c39, type: 3}
       propertyPath: m_Name
       value: HoldingButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624816084066965230, guid: fb430d56bd6a07cb491baa97a64a5c39, type: 3}
+      propertyPath: <CanCreateCables>k__BackingField
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7032410004299521700, guid: fb430d56bd6a07cb491baa97a64a5c39, type: 3}
       propertyPath: m_RootOrder
@@ -878,6 +886,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319709167795542708, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379109918480468028, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+      propertyPath: deletable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8116983518723694984, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
