@@ -772,14 +772,14 @@ PrefabInstance:
         A  B      
         |     A'' B''
 
-        0  0        |     1  1
+        0  1        |     1  0
 
-        0  1        |    
+        1  1        |    
         1  0
 
-        1  0        |     1  0
+        1  0        |     0  1
 
-        1  1        |     0  1'
+        1  1        |     1  1'
       objectReference: {fileID: 0}
     - target: {fileID: 3048063640220398870, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
       propertyPath: m_RootOrder
