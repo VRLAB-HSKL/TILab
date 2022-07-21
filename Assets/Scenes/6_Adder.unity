@@ -306,6 +306,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 481223342}
     m_Modifications:
+    - target: {fileID: 1341604941331468154, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: "S\xB9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211263029356389078, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: "S\xB2"
+      objectReference: {fileID: 0}
     - target: {fileID: 3660742133386801907, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -350,9 +358,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4418611873568941539, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: "S\xB2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963341237682585791, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: "S\xB9"
+      objectReference: {fileID: 0}
     - target: {fileID: 5570784047120094088, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
       propertyPath: m_Name
       value: InputValidator3Pin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602065072857538699, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224433248244694040, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
+      propertyPath: m_text
+      value: C
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec63fabaca315f425924f5cfa6f6fceb, type: 3}
@@ -1099,10 +1123,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6677780093394766575, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: m_text
-      value: "Level 6\n\n(Voll-) Addierer\n\nIn diesem Level soll ein SR-Latch konstruiert
-        werden. Ein Latch ist ein Baustein, der Daten speichern kann.\n\nDas Latch
-        hat zwei Eing\xE4nge 'S' und 'R' \n(Set und Reset).\nMit S kann ein Wert
-        gesetzt werden. Dieser wird solange mit Q ausgegeben, bis R gesetzt wird."
+      value: "Level 6\n\n(Voll-) Addierer\n\nIn diesem Level soll ein Addierer konstruiert
+        werden. Dieser soll 2 2-Bit-Zahlen (A und B) miteinander addieren k\xF6nnen
+        und eine 2-Bit-Zahl (S) inklusive einem \xDCberlauf-Bit (C) ausgeben."
       objectReference: {fileID: 0}
     - target: {fileID: 8381028776157130433, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1121,6 +1144,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 481223342}
     m_Modifications:
+    - target: {fileID: 528008946602387640, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "A\xB2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968520239186595789, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "A\xB2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697945694336977526, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "B\xB9"
+      objectReference: {fileID: 0}
     - target: {fileID: 3660742133386801907, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1165,9 +1200,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3729013625146140049, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "A\xB9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425529096138911723, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "B\xB2"
+      objectReference: {fileID: 0}
     - target: {fileID: 5570784047120094088, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
       propertyPath: m_Name
       value: OutputGenerator4Pin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992454573671807260, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "B\xB2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476080997300713630, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "B\xB9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9150193872635040187, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
+      propertyPath: m_text
+      value: "A\xB9"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40de3179fe9c85ce08778f67e28bc94b, type: 3}
