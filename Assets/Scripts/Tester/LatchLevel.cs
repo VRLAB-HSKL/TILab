@@ -8,10 +8,10 @@ namespace TILab.Tester
             // TODO: @Saarli fix this
             Sequence = new SequenceItem[]
             {
-                new SequenceItem("01", "10"),
-                new SequenceItem("11", "10"),
-                new SequenceItem("10", "01"),
-                new SequenceItem("00", "11"),
+                new SequenceItem("10", "10"),
+                new SequenceItem("00", "10"),
+                new SequenceItem("01", "01"),
+                new SequenceItem("00", "01"),
             };
         }
 
