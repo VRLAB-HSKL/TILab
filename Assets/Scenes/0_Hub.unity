@@ -525,7 +525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: DeMorgan
+      value: 2_NAND
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
@@ -810,7 +810,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: Latch
+      value: 5_Latch
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
@@ -896,7 +896,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: AndWithNAND
+      value: 3_ANDWithNAND
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
@@ -1868,7 +1868,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: EXOR
+      value: 1_XOR
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
@@ -2202,7 +2202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: Addierer
+      value: 6_Adder
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
@@ -2432,7 +2432,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: sceneName
-      value: EXORWithNAND
+      value: 4_XORWithNAND
       objectReference: {fileID: 0}
     - target: {fileID: 1133770527277995911, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: displayName
