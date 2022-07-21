@@ -14,8 +14,6 @@ namespace TILab
         [field: SerializeField] 
         public OutputPin OutputPin { get; set; }
 
-        public bool deletable = true;
-
         private bool _value = false;
         private Renderer _renderer;
         private MeshCollider _collider;
@@ -50,16 +48,13 @@ namespace TILab
 
             if (distance > 2f)
             {
-                
                 Vector3 inputAxisDistance = CalculatePinCableDistance(InputPin, OutputPin);
                 Vector3 outputAxis = transform.InverseTransformPoint(InputPin.transform.position + inputAxisDistance);
-                // Vector3 outputAxis = transform.InverseTransformPoint(InputPin.transform.position + InputPin.transform.up);
                 _bezierPoints.Add(outputAxis);
             
             
                 Vector3 outputAxisDistance = CalculatePinCableDistance(OutputPin, InputPin);
                 Vector3 inputAxis = transform.InverseTransformPoint(OutputPin.transform.position + outputAxisDistance);
-                // Vector3 inputAxis = transform.InverseTransformPoint(OutputPin.transform.position + OutputPin.transform.up);
                 Vector3 axisMiddle = Vector3.Lerp(outputAxis, inputAxis, 0.5f);
                 _bezierPoints.Add(axisMiddle);
             
@@ -73,10 +68,7 @@ namespace TILab
                               (-Vector3.Cross(InputPin.transform.position, OutputPin.transform.position).normalized) *
                               (distance * 0.2f);
                 
-                // _bezierPoints.Add(Vector3.Lerp(transform.InverseTransformPoint(InputPin.transform.position), middle, 0.5f));
-                // _bezierPoints.Add(middle);
                 _bezierPoints.Add(tip);
-                // _bezierPoints.Add(Vector3.Lerp(transform.InverseTransformPoint(OutputPin.transform.position), middle, 0.5f));
             }
             
             _bezierPoints.Add(transform.InverseTransformPoint(OutputPin.transform.position));
