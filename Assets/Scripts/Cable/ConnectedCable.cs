@@ -19,12 +19,14 @@ namespace TILab
         private bool _value = false;
         private Renderer _renderer;
         private MeshCollider _collider;
+        private Mesh _mesh;
         
         protected override void Start()
         {
             base.Start();
-            this._renderer = this.GetComponent<Renderer>();
-            this._collider = this.GetComponent<MeshCollider>();
+            _renderer = this.GetComponent<Renderer>();
+            _collider = this.GetComponent<MeshCollider>();
+            _mesh = new Mesh(); 
 
             BeginPos = InputPin.transform.position;
             EndPos = OutputPin.transform.position;
@@ -85,11 +87,10 @@ namespace TILab
             base.DrawBezier();
             if (_collider)
             {
-                Mesh mesh = new Mesh();
                 _lineRenderer.useWorldSpace = false;
                 transform.position = transform.TransformPoint(_bezierPoints[_bezierPoints.Count / 2]);
-                _lineRenderer.BakeMesh(mesh);
-                _collider.sharedMesh = mesh;
+                _lineRenderer.BakeMesh(_mesh);
+                _collider.sharedMesh = _mesh;
             }
             
         }
