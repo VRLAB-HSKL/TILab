@@ -758,9 +758,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 67937961258782834, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
       propertyPath: m_text
-      value: 'Baue ein Latch!
+      value: 'Baue ein SR-Latch!
 
-        verwende die Gatter um ein Latch zu bauen,
+        Verwende die Gatter um ein Latch zu bauen,
         welches einen Wert speichern kann'
       objectReference: {fileID: 0}
     - target: {fileID: 3048063640112093980, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
