@@ -573,6 +573,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 250819453}
     m_Modifications:
+    - target: {fileID: 3356495859438692585, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_text
+      value: "Baue dein eigenes XOR-Gatter\n\nVerwende ausschlie\xDFlich \nNAND Gatter"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501807163365240725, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_text
+      value: 'Eingabe | Ausgabe
+
+        -------------------------
+
+        A  B      
+        |     A''
+
+        0  0        |     0
+
+        0  1        |     1
+
+        1 
+        0        |     1
+
+        1  1        |     0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964377655403874962, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4619623126137657029, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: sceneName
       value: Latch

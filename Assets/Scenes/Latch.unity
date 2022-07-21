@@ -783,19 +783,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 34292493}
     m_Modifications:
+    - target: {fileID: 67937961258782834, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
+      propertyPath: m_text
+      value: 'Baue ein Latch!
+
+        verwende die Gatter um ein Latch zu bauen,
+        welches einen Wert speichern kann'
+      objectReference: {fileID: 0}
     - target: {fileID: 3048063640112093980, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
       propertyPath: m_text
       value: 'Eingabe | Ausgabe
 
         -------------------------
 
-        0  0       
-        |     1  1
+        A  B      
+        |     A'' B''
 
-        0  1        |     1  0
+        0  0        |     1  1
 
-        1  0        |     1 
-        0
+        0  1        |    
+        1  0
+
+        1  0        |     1  0
 
         1  1        |     0  1'
       objectReference: {fileID: 0}
@@ -854,6 +863,10 @@ PrefabInstance:
     - target: {fileID: 5056028675481803841, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
       propertyPath: displayName
       value: Hub
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130027446723677136, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b291ed8f4cde30b45ab04e05797501c4, type: 3}

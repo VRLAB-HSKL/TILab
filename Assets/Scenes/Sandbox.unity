@@ -266,9 +266,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3356495859438692585, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_text
+      value: "Freies Bauen:\nAuf den Spawnern befinden sich zus\xE4tzliche Elemente\nLasse
+        deiner Fantasie freien Lauf!"
+      objectReference: {fileID: 0}
     - target: {fileID: 3501807163365240725, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964377655403874962, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964377655403874962, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4024996177096828252, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: m_IsActive

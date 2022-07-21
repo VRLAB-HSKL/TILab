@@ -828,6 +828,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 164664217}
     m_Modifications:
+    - target: {fileID: 3356495859438692585, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_text
+      value: Baue ein XOR Gatter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501807163365240725, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_text
+      value: 'Eingabe | Ausgabe
+
+        -------------------------
+
+        A  B      
+        |     A''
+
+        0  0        |     0
+
+        0  1        |     1
+
+        1 
+        0        |     1
+
+        1  1        |     0'
+      objectReference: {fileID: 0}
     - target: {fileID: 4619623126137657029, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: sceneName
       value: DeMorgan
