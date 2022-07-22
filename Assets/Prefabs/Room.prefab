@@ -1244,7 +1244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3215229498383959920, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: HubDoor
       objectReference: {fileID: 0}
     - target: {fileID: 5876207825931640111, guid: 52ab7ddae78e99a05b83cbc8ab847601, type: 3}
       propertyPath: m_RootOrder
@@ -1310,7 +1310,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1991119362123962839, guid: 17529fbb236e73e6e91c0086a67d23fb, type: 3}
       propertyPath: m_Name
-      value: CircuitDoor
+      value: NextLevelDoor
       objectReference: {fileID: 0}
     - target: {fileID: 6270325192733313200, guid: 17529fbb236e73e6e91c0086a67d23fb, type: 3}
       propertyPath: m_RootOrder
@@ -1373,6 +1373,10 @@ PrefabInstance:
     - target: {fileID: 2472351450875175726, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
       propertyPath: m_Name
       value: CeilingLamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515901978425683058, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2706368739829519229, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
       propertyPath: m_RootOrder
@@ -1497,6 +1501,10 @@ PrefabInstance:
     - target: {fileID: 2472351450875175726, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
       propertyPath: m_Name
       value: CeilingLamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515901978425683058, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2706368739829519229, guid: b0af7315c42a6294e98de12ff1ea4fcb, type: 3}
       propertyPath: m_RootOrder

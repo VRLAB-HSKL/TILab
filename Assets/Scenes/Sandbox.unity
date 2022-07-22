@@ -495,6 +495,10 @@ PrefabInstance:
         bauen. \n\nHier sind auch einige Bausteine verf\xFCgbar, die Euch in den
         regul\xE4ren Leveln nicht zur Verf\xFCgung stehen."
       objectReference: {fileID: 0}
+    - target: {fileID: 8215700365733703746, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 8381028776157130433, guid: df02fb77860267c4e9a1da3fd6b04553, type: 3}
       propertyPath: m_SizeDelta.x
       value: 8
@@ -844,6 +848,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11411378, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
       propertyPath: customModelActiveMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411378, guid: cbfd31aaac017204885fcc03f0579a1a, type: 3}
+      propertyPath: laserPointerActiveMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
