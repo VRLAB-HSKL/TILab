@@ -815,7 +815,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "GATE SPAWNER\n\nHier befindet sich in  jedem Level eine Reihe von Sockeln,
     auf denen Gatter liegen. Diese k\xF6nnt Ihr greifen und in Euerer Schaltung verwenden.\n\nMit
-    dem roten Knopf am Sockel k\xF6nnt ihr weitere Gatter von dieser Sorte anfordern."
+    dem roten Knopf am Sockel k\xF6nnt Ihr weitere Gatter von dieser Sorte anfordern."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
