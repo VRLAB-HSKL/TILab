@@ -1037,6 +1037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HoldingButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2407944623195452196, guid: fb430d56bd6a07cb491baa97a64a5c39, type: 3}
+      propertyPath: deletable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2624816084066965230, guid: fb430d56bd6a07cb491baa97a64a5c39, type: 3}
       propertyPath: <CanCreateCables>k__BackingField
       value: 0
