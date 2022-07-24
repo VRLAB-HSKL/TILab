@@ -29,6 +29,7 @@ Akzeptiert der Validator die Ausgabe der Schaltung, wird die Tür zum nächsten 
 Gatter können vom Nutzer mit **Grip** aufgenommen und bewegt werden. Je nach Aufgabe sind in einem Level verschiedene Gatter verfügbar. In jedem Level befindet sich eine Reihe mit *Gate Spawner* Objekten. Beim Start des Levels wird automatisch von jedem *Spawner* ein entsprechendes Gatter erzeugt, weitere Gatter können über den roten Button angefordert werden. Der Nutzer kann die Gatter einfach von der Auflagefläche des *Spawner* herunternehmen. 
 
 Nicht benötigte Gatter können mit **Function** gelöscht werden.
+
 ![Spawner](Documentation/images/Spawner.PNG)
 ## Kabel
 
