@@ -297,12 +297,12 @@ MonoBehaviour:
   m_margin: {x: -2.1783907, y: 0, z: -2.1652794, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1908628427267289656}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!1 &3935204831790169965
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,12 +469,12 @@ MonoBehaviour:
   m_margin: {x: -2.1783907, y: 0, z: -2.1652794, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2992028123376973939}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!1 &3999599718865509943
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,8 +703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Value>k__BackingField: 0
   <CanCreateCables>k__BackingField: 1
-  cablePrefab: {fileID: 0}
-  baseCablePrefab: {fileID: 0}
+  cablePrefab: {fileID: 812301095513663268, guid: d0a4f0740ec5742eab5c40414224a98a, type: 3}
+  baseCablePrefab: {fileID: 812301095513663268, guid: 3b5ed6b1965c7422b8f8e67f43552178, type: 3}
 --- !u!1 &5359219643903947875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,12 +1136,12 @@ MonoBehaviour:
   m_margin: {x: -2.1783907, y: 0, z: -2.1652794, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5880824817798803893}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!1 &7884061933211752251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,9 +1340,9 @@ MonoBehaviour:
   m_margin: {x: -2.1783907, y: 0, z: -2.1652794, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5662055146316547447}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
