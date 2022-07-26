@@ -29,7 +29,7 @@ namespace TILab
             }
         }
 
-        public void ChangeScene()
+        public virtual void ChangeScene()
         {
             if (active)
             {

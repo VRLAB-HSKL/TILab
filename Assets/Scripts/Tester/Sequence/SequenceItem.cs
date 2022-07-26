@@ -7,7 +7,7 @@ namespace TILab.Tester
         
         public int WaitTicks { get; }
 
-        public SequenceItem(string output, string input, int waitTicks = 50)
+        public SequenceItem(string output, string input, int waitTicks = 150)
         {
             Output = output;
             Input = input;
